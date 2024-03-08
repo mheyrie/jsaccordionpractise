@@ -25,7 +25,7 @@ body{
 }
 
 .questions-container .question{
-    padding: 18px;
+    padding: 10px 0;
     font-size: 20px;
     border-bottom: 1px solid red;
     cursor: pointer;
@@ -48,12 +48,12 @@ body{
 
     height: 0;
     overflow: hidden;
-    transition: .5s;
+    transition: height 0.5s; 
 }
 
 
 
-/* JS STYLIG LINK */
-.accordion .questions-container.active .answer{
-    height: 150px;
+.questions-container.active .question::after{
+    content: "-";
+    font-size: 20px;
 }
